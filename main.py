@@ -1,2 +1,11 @@
-print("hello")
-print("eehllo")
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get("/")
+def welcome():
+    return{"message": "Hello, World!"}
+
+@app.get("/welcome/{name}")
+def welcome_name(name: str):
+    return {"message": f"Welcome, {name}!"}
+# new comment
