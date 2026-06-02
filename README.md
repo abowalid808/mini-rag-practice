@@ -15,3 +15,8 @@ $ pip install -r requirments.txt
 ```bash
 $ cp .env.example .env
 ```
+
+## Running the app on uvicorn 
+```bash
+$ uvicorn main:app --reload
+```
