@@ -7,3 +7,4 @@ app = FastAPI()
 app.include_router(base.router1)
 app.include_router(base.router2)
 
+print("Server is running...")
