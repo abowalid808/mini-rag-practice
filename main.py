@@ -3,8 +3,9 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 from routes import base
 
-app = FastAPI()
+app = FastAPI() 
 app.include_router(base.router1)
 app.include_router(base.router2)
 
 print("Server is running...")
+print("API documentation available at http://localhost:8000/docs")
