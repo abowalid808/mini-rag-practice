@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 app = FastAPI()
-
+print("Hello, World!")
 @app.get("/")
 def welcome():
     return{"message": "Hello, World!"}
