@@ -6,6 +6,11 @@ This is a best practice of RAG model for Question answering
 
 - Python 3.8 or later
 
+## Activate conda on WSL 
+```bash
+$ conda activate mini-rag-app
+```
+
 ## Installation
 ### Install the required packages
 ```bash
@@ -18,5 +23,5 @@ $ cp .env.example .env
 
 ## Running the app on uvicorn 
 ```bash
-$ uvicorn main:app --reload
+$ uvicorn src.main:app --reload
 ```
